@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+        gap: 30px;
+      }
+      #search {
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 5px;
+        border: none;
+        box-shadow: 0 0 5px 0 #000;
+      }
+      button {
+        padding: 8px 20px;
+        font-weight: 600;
+        background-color: #392ffc;
+        color: #fff;
+        font-size: 22px;
+        border-radius: 10px;
+      }
+    </style>
+    <title>ASSIGNMENT</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="display"></div>
+      <input type="search" name="search" id="search" autofocus />
+      <button>Submit</button>
+    </div>
+    <script>
+      const input = document.querySelector("#search");
+      const button = document.querySelector("button");
+      const display = document.querySelector("#display");
+
+      function itemDisplay() {
+        display.innerHTML = input.value;
+        input.innerText = "";
+      }
+
+      button.addEventListener("click", itemDisplay);
+    </script>
+  </body>
+</html>

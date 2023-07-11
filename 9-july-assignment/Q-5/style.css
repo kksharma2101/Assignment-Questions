@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  flex-direction: column;
+}
+.main input {
+  margin: 3px 0 12px 0;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.main fieldset {
+  padding: 10px;
+  border-radius: 5px;
+}
+.main button {
+  padding: 4px 10px;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: #3838ff;
+  color: #fff;
+}

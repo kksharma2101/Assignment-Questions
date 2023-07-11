@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASSIGNMENT</title>
+  </head>
+  <body>
+    <div id="data-container" style="padding: 20px"></div>
+    <script>
+      const dataContainer = document.getElementById("data-container"); // Show skeleton loader
+      dataContainer.innerHTML =
+        // Fetch data from JSON Placeholder API
+        fetch("https://jsonplaceholder.typicode.com/posts")
+          .then((response) => response.json())
+          .then((data) => {
+            // Remove skeleton loader
+            dataContainer.innerHTML = ""; // Display fetched data in the browser
+            data.forEach((post) => {
+              const postElement = document.createElement("div");
+              postElement.innerHTML = `${post.title}
+      ${post.body}`;
+              dataContainer.appendChild(postElement);
+            });
+          })
+          .catch((error) => console.error("Error fetching data:", error));
+    </script>
+  </body>
+</html>

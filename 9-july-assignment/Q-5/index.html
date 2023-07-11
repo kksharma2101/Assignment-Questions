@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" class="css" />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <!-- 5. Create a form with proper form validation using JavaScript (name, email, phone number, password, age, gender, date, color picker) -->
+    <div class="container">
+      <div class="main">
+        <form action="/Q-5/message.html">
+          <label>Name:</label>
+          <br />
+          <input type="name" name="name" id="name" required />
+          <br />
+          <label>Email:</label>
+          <br />
+          <input type="email" name="email" id="email" />
+          <br />
+          <label>Phone Number:</label>
+          <br />
+          <input type="number" name="number" id="number" />
+          <br />
+          <label>Age:</label>
+          <br />
+          <input type="number" name="age" id="age" max="100" />
+          <br />
+          <label>Date:</label>
+          <br />
+          <input type="date" name="date" id="date" />
+          <br />
+          <fieldset>
+            <legend>Gender</legend>
+            Male :
+            <input type="radio" name="male" id="male" value="male" />
+            Female:
+            <input type="radio" name="female" id="female" value="female" />
+          </fieldset>
+          <br />
+          <label>Password:</label>
+          <br />
+          <input type="password" name="password" id="password" />
+          <br />
+          <label>Favorite Color:</label>
+          <input type="color" name="color" id="color" />
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      const name = document.querySelector("#name");
+      const password = document.querySelector("#password");
+      const email = document.querySelector("#email");
+      const button = document.querySelector("button");
+
+      function validation() {
+        if (name.value == "" && password.value == "" && email.value == "") {
+          alert("Please fill the form");
+        }
+      }
+      button.addEventListener("click", validation);
+    </script>
+  </body>
+</html>

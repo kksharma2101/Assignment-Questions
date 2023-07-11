@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box {
+        text-align: center;
+        border: 1px solid #000;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+      }
+    </style>
+    <title>ASSIGNMENT</title>
+  </head>
+  <body>
+    <div class="box"><h2>Hello sir</h2></div>
+    <script>
+      const box = document.querySelector(".box");
+
+      box.style.backgroundColor = "red";
+
+      function colorChanger() {
+        box.innerHTML = "hello PW skills";
+        box.style.width = "600px";
+        box.style.height = "600px";
+        box.style.backgroundColor = "yellow";
+        box.style.padding = "30px";
+      }
+
+      box.addEventListener("click", colorChanger);
+    </script>
+  </body>
+</html>

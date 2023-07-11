@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome script -->
+    <script
+      src="https://kit.fontawesome.com/0cf316bcfd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- write css -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        width: 100%;
+        background-color: #50d2ec;
+        padding: 10px 5px;
+        height: 6rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      nav label,
+      .logo {
+        line-height: 60px;
+        font-size: 30px;
+        padding: 10px 20px;
+        font-weight: 800;
+      }
+      nav .label {
+        box-shadow: 0 0 2px 0 #000;
+        border-radius: 50%;
+        margin: 0 10px;
+      }
+      #hamburger {
+        margin: 0 10px;
+        font-size: 35px;
+        cursor: pointer;
+        display: none;
+      }
+      nav ul {
+        font-size: 22px;
+        text-align: center;
+      }
+      nav ul li {
+        padding: 5px;
+        list-style: none;
+        transition: 0.8s ease;
+        display: inline-block;
+        cursor: pointer;
+      }
+      nav ul li:hover {
+        color: rgb(166, 1, 255);
+        font-weight: 700;
+      }
+      /* write media query */
+      @media (max-width: 760px) {
+        #hamburger {
+          display: block;
+          font-size: 40px;
+        }
+        #item-list {
+          background-color: #2c3e50;
+          height: 100vh;
+          width: 100%;
+          position: fixed;
+          top: 90px;
+          text-align: center;
+          display: none;
+          color: #fff;
+        }
+        nav ul li {
+          display: block;
+          margin-top: 15px;
+        }
+        nav ul li:hover {
+          background-color: #fff;
+          color: blue;
+          transition: 0.5s ease-in;
+          font-size: 25px;
+        }
+      }
+    </style>
+    <title>Assignment</title>
+  </head>
+  <body>
+    <!-- 4. Build a responsive Navbar, on smaller screens it should be a hamburger menu which on click should reveal the menu items nicely, and on larger screens they should be displayed directly on the screen. -->
+    <nav>
+      <div class="label">
+        <label class="logo">PW_SKILLS</label>
+      </div>
+      <ul id="item-list">
+        <li>Courses</li>
+        <li>PW Skills Lab</li>
+        <li>Job portal</li>
+        <li>Experience Portal</li>
+        <li>Become an affiliate</li>
+        <li>Hall of fame</li>
+        <li>PW Skills</li>
+      </ul>
+      <div id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <script>
+      const hamburger = document.querySelector(".fa-solid");
+
+      function show() {
+        itemList = document.querySelector("#item-list");
+        itemList.style.display = "block";
+      }
+      hamburger.addEventListener("click", show);
+    </script>
+  </body>
+</html>

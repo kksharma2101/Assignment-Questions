@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #1e1e1e;
+        color: #fff;
+      }
+      .container {
+        padding: 10px;
+      }
+      .container button {
+        padding: 4px 15px;
+        font-size: 20px;
+        border-radius: 8px;
+        background-color: #0c33f5;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .contant {
+        display: none;
+        height: 100%;
+        width: 100%;
+      }
+      .para {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: #000;
+      }
+      .para h1 {
+        background-color: #13ef13;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .para p {
+        background-color: #ddfcff;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+      }
+      .closs {
+        font-size: 25px;
+        cursor: pointer;
+        right: 100px;
+      }
+    </style>
+    <title>Assignment</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Custom modal window</h1>
+      <button>Click</button>
+    </div>
+    <div class="contant">
+      <span class="closs">❌</span>
+      <div class="para">
+        <h1>Hello PW-SKILLS</h1>
+        <p>Hey, Students please enroll any cources</p>
+        <p>Insert any values</p>
+      </div>
+    </div>
+    <script>
+      const button = document.querySelector("button");
+      const closs = document.querySelector(".closs");
+      const contant = document.querySelector(".contant");
+
+      button.onclick = function open() {
+        contant.style.display = "block";
+      };
+      closs.onclick = function closs() {
+        contant.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
