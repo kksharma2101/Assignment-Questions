@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container p {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 800;
+}
+.img img {
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 420px;
+}
+.heading .ul-tag ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 10px;
+  font-size: 18px;
+}
+.heading .ul-tag:first-child {
+  font-weight: bolder;
+}
+.heading .form label,
+input {
+  margin-left: 19px;
+}
+.footer {
+    margin-left: 20px;
+}
+.footer ul {
+  margin-left: 35px;
+}
+.footer ul li {
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer .ul-li li {
+  font-weight: normal;
+}

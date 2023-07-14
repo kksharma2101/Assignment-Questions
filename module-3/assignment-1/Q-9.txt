@@ -1,0 +1,1 @@
+The main difference between tag and attribute is that a tag is a way of representing an HTML element in the program, while an attribute is a way of describing the characteristics of an HTML element. Every business organization maintains a website. It helps to inform the customers about their products and services.
