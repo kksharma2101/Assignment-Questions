@@ -1,0 +1,1 @@
+In CSS, vh stands for viewport height and vw for viewport width. As you can see, the first unit is based on the viewport height, and 1vh is equivalent to 1% of the viewport height. vw works the same, but for viewport width. So, 1vw equals 1% of the viewport width.

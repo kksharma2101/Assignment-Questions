@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* fixed position use here */
+      nav {
+        position: fixed;
+        width: 100%;
+      }
+      nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #6ce2ef;
+        color: #fff;
+        padding: 20px;
+      }
+      nav ul li {
+        list-style: none;
+        font-size: 20px;
+      }
+      .fixed {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 98%;
+      }
+      /* static position use */
+      #graph-img {
+        margin-top: 4.4rem;
+        width: 99%;
+        height: 60vh;
+        border-radius: 5px;
+        position: static;
+      }
+      /* sticky position use */
+      .fixed p {
+        margin: 20px 10px;
+        line-height: 25px;
+        font-size: 20px;
+        position: sticky;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      /* absolute position use */
+      .container .absolute {
+        position: absolute;
+      }
+      /* relative position use */
+      .container .relative {
+        position: relative;
+      }
+    </style>
+    <title>position</title>
+  </head>
+  <body>
+    <!-- fixed position -->
+    <div class="nav">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Service</li>
+          <li>FAQ</li>
+        </ul>
+      </nav>
+    </div>
+    <!-- fixed position -->
+    <div class="fixed">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfYbMiKvaUQMbrZyg1Y_P9TGeXhYsChatlN478dhcbR6gCblzEJyHXOay0tVbudMo02PI&usqp=CAU"
+        alt="graph_img"
+        id="graph-img"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ad
+        fuga nisi voluptates, dolore ab. Eveniet quibusdam nemo adipisci hic
+        culpa impedit quos odio, sequi unde corrupti necessitatibus architecto
+        illum deleniti eligendi maxime ea veritatis qui vel reprehenderit
+        tempora a rem. Tempora aspernatur unde aperiam exercitationem veniam
+        voluptas perspiciatis omnis totam vitae, officia corporis praesentium
+        quam inventore, error illum vel. Ratione deserunt quos maxime vel ipsam
+        a impedit officiis numquam, aspernatur alias sint voluptatum. Nesciunt
+        eius sed nisi necessitatibus harum, rerum enim ex iste consequuntur
+        dolore repellendus similique ut error, officia pariatur sequi eveniet
+        culpa nihil suscipit. Autem, deleniti aliquam!
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="absolute">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNkdNSfSg93jCwpKzOlYcqyy7HRTMtyCKpfRSglD566fju8rhRUtwvD8nkfiMpJa5OIz0&usqp=CAU"
+          alt=""
+        />
+      </div>
+
+      <div class="relative">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6aTPyBgmRh-luHA48HCMQ5to1htf8C1zvf7ULfnALaMBZ-UnrmWk1RzSJCBx-ZwGU54s&usqp=CAU"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

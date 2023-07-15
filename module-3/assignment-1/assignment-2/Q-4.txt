@@ -1,0 +1,1 @@
+A block element has some whitespace above and below it and does not tolerate any HTML elements next to it. An inline-block element is placed as an inline element (on the same line as adjacent content), but it behaves as a block element.

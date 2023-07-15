@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  outline: none;
+}
+.container {
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 2.5rem;
+  height: 3rem;
+  margin: 5px;
+  padding: 3px;
+  text-align: center;
+  background-color: #df8487;
+}
+.second-group {
+  margin-top: 50px;
+}
+.color-sky {
+  width: 2.5rem;
+  height: 3rem;
+  margin: 5px;
+  padding: 3px;
+  text-align: center;
+  background-color: #78c8e0;
+}
+.third-group,
+.fourth-group,
+.five-group,
+.six-group,
+.seven-group,
+.eight-group,
+.nine-group,
+.ten-group,
+.elevan-group,
+.twelve-group {
+  margin-top: 10rem;
+}
+.therteen-group,
+.fourteen-group,
+.fifteen-group,
+.sixteen-group,
+.seventeen-group,
+.eighteen {
+  margin-top: 3.5rem;
+}
+.yellow-color {
+  background-color: #fef39f;
+  width: 2.5rem;
+  height: 3rem;
+  margin: 5px;
+  padding: 3px;
+  text-align: center;
+}
+.pink-color {
+  width: 2.5rem;
+  height: 3rem;
+  margin: 5px;
+  padding: 3px;
+  text-align: center;
+  background-color: #df8487;
+}
+.first-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green-box {
+  width: 2.5rem;
+  height: 3rem;
+  margin: 5px;
+  padding: 3px;
+  text-align: center;
+  background-color: #57d96a;
+}
